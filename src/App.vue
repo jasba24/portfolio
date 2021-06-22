@@ -1,14 +1,14 @@
 <template>
-  <PfHeader></PfHeader>
+  <Header></Header>
   <router-view></router-view>
 </template>
 
 <script>
-import PfHeader from "@/components/PfHeader";
+import Header from "@/components/PfHeader";
 
 export default {
   name: "App",
-  components: { PfHeader }
+  components: { Header }
 };
 </script>
 

@@ -1,11 +1,14 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <Hero></Hero>
   </div>
 </template>
 
 <script>
+import Hero from "@/components/PfHero";
+
 export default {
-  name: "Home"
+  name: "Home",
+  components: { Hero }
 };
 </script>
