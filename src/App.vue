@@ -35,6 +35,10 @@ export default {
 </script>
 
 <style>
+:root {
+  --primary-color: #2c3e50;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +60,6 @@ a {
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: #2c3e50;
+  color: var(--primary-color);
 }
 </style>
