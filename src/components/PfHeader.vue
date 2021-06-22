@@ -17,28 +17,7 @@
 <script>
 export default {
   name: "Header",
-  data() {
-    return {
-      links: [
-        {
-          name: "About",
-          href: "/about"
-        },
-        {
-          name: "Blog",
-          href: "/blog"
-        },
-        {
-          name: "Projects",
-          href: "/projects"
-        },
-        {
-          name: "Contact",
-          href: "/contact"
-        }
-      ]
-    };
-  }
+  props: ["links"]
 };
 </script>
 

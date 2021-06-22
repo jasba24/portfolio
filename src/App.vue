@@ -1,5 +1,5 @@
 <template>
-  <Header></Header>
+  <Header :links="links"></Header>
   <router-view></router-view>
 </template>
 
@@ -8,7 +8,29 @@ import Header from "@/components/PfHeader";
 
 export default {
   name: "App",
-  components: { Header }
+  components: { Header },
+  data() {
+    return {
+      links: [
+        {
+          name: "About",
+          href: "/about"
+        },
+        {
+          name: "Blog",
+          href: "/blog"
+        },
+        {
+          name: "Projects",
+          href: "/projects"
+        },
+        {
+          name: "Contact",
+          href: "/contact"
+        }
+      ]
+    };
+  }
 };
 </script>
 
