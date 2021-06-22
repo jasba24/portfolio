@@ -1,6 +1,16 @@
 <template>
+  <PfHeader></PfHeader>
   <router-view></router-view>
 </template>
+
+<script>
+import PfHeader from "@/components/PfHeader";
+
+export default {
+  name: "App",
+  components: { PfHeader }
+};
+</script>
 
 <style>
 * {
@@ -15,6 +25,11 @@ html {
 
 h1 {
   font-size: 3.2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 #app {

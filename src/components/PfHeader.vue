@@ -1,10 +1,15 @@
 <template>
   <header class="header">
-    <h1>Johan Buitrago</h1>
+    <router-link to="/" class="header-title">Johan Buitrago</router-link>
     <div>
-      <a v-for="(l, i) in links" :key="i" class="header-link" :href="l.href">{{
-        l.name
-      }}</a>
+      <router-link
+        v-for="(l, i) in links"
+        :key="i"
+        class="header-link"
+        :to="l.href"
+      >
+        {{ l.name }}
+      </router-link>
     </div>
   </header>
 </template>
@@ -28,7 +33,7 @@ export default {
         },
         {
           name: "Contact",
-          href: "#about"
+          href: "/contact"
         }
       ]
     };
@@ -45,12 +50,14 @@ export default {
   padding: 0 50px;
   box-shadow: 2px 6px 7px 0 grey;
 }
-
+.header-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
 .header-link {
-  color: inherit;
-  text-decoration: none;
   font-size: 1.6rem;
   margin-left: 10px;
   font-weight: bold;
 }
 </style>
+
