@@ -2,8 +2,8 @@
   <div class="home">
     <Hero></Hero>
     <Skills></Skills>
-    <h1>Projects</h1>
     <section class="projects">
+      <h1>Projects</h1>
       <div class="projects-container">
         <Project
           v-for="(p, i) in projects"
@@ -17,7 +17,9 @@
 </template>
 
 <script>
-import logo from "@/assets/logo.png";
+import platziBadges from "@/assets/platzi-badges.png";
+import exchange from "@/assets/exchange.png";
+import platziMusic from "@/assets/platzi-music.png";
 import icon from "@/assets/logo.png";
 import Hero from "@/components/PfHero";
 import Skills from "@/components/PfSkills";
@@ -31,17 +33,17 @@ export default {
     return {
       projects: [
         {
-          logo: logo,
+          logo: platziBadges,
           icon: icon,
           href: "Platzi-badges"
         },
         {
-          logo: logo,
+          logo: exchange,
           icon: icon,
-          href: "Platzi-rooms"
+          href: "Platzi-exchange"
         },
         {
-          logo: logo,
+          logo: platziMusic,
           icon: icon,
           href: "Platzi-badges"
         }
@@ -50,4 +52,3 @@ export default {
   }
 };
 </script>
-

@@ -60,7 +60,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .projects {
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@ export default {
 }
 .projects-container {
   display: grid;
-  width: 800px;
+  margin: 0 auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
