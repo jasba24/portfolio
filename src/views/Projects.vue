@@ -13,7 +13,11 @@
 </template>
 
 <script>
-import logo from "@/assets/logo.png";
+import platziBadges from "@/assets/platzi-badges.png";
+import exchange from "@/assets/exchange.png";
+import platziMusic from "@/assets/platzi-music.png";
+import diablo3 from "@/assets/diablo3.png";
+import spa from "@/assets/spa.png";
 import icon from "@/assets/logo.png";
 import Project from "@/components/PfProject";
 
@@ -25,32 +29,32 @@ export default {
     return {
       projects: [
         {
-          logo: logo,
+          logo: spa,
           icon: icon,
           href: "Platzi-badges"
         },
         {
-          logo: logo,
-          icon: icon,
-          href: "Platzi-rooms"
-        },
-        {
-          logo: logo,
+          logo: diablo3,
           icon: icon,
           href: "Platzi-badges"
         },
         {
-          logo: logo,
+          logo: platziBadges,
           icon: icon,
           href: "Platzi-badges"
         },
         {
-          logo: logo,
+          logo: exchange,
           icon: icon,
-          href: "Platzi-badges"
+          href: "Platzi-exchange-vue"
         },
         {
-          logo: logo,
+          logo: platziMusic,
+          icon: icon,
+          href: "Platzi-music-vue"
+        },
+        {
+          logo: icon,
           icon: icon,
           href: "Platzi-badges"
         }
