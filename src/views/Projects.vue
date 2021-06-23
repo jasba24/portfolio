@@ -27,53 +27,35 @@ export default {
         {
           logo: logo,
           icon: icon,
-          href: "Platzi-badges",
+          href: "Platzi-badges"
         },
         {
           logo: logo,
           icon: icon,
-          href: "Platzi-rooms",
+          href: "Platzi-rooms"
         },
         {
           logo: logo,
           icon: icon,
-          href: "Platzi-badges",
+          href: "Platzi-badges"
         },
         {
           logo: logo,
           icon: icon,
-          href: "Platzi-badges",
+          href: "Platzi-badges"
         },
         {
           logo: logo,
           icon: icon,
-          href: "Platzi-badges",
+          href: "Platzi-badges"
         },
         {
           logo: logo,
           icon: icon,
-          href: "Platzi-badges",
+          href: "Platzi-badges"
         }
       ]
     };
   }
 };
 </script>
-
-<style>
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.projects h1 {
-  margin: 20px 0;
-}
-.projects-container {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-</style>
