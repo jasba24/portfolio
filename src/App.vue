@@ -1,17 +1,19 @@
 <template>
-  <Header :links="links"></Header>
+  <Header :links="headerLinks"></Header>
   <router-view></router-view>
+  <Footer :links="footerLinks"></Footer>
 </template>
 
 <script>
 import Header from "@/components/PfHeader";
+import Footer from "@/components/ PfFooter";
 
 export default {
   name: "App",
-  components: { Header },
+  components: { Header, Footer },
   data() {
     return {
-      links: [
+      headerLinks: [
         {
           name: "About",
           href: "/about"
@@ -27,6 +29,24 @@ export default {
         {
           name: "Contact",
           href: "/contact"
+        }
+      ],
+      footerLinks: [
+        {
+          name: "LinkedIn",
+          href: "https://linkedin.com/in/jasba24"
+        },
+        {
+          name: "Twitter",
+          href: "https://twitter.com/jasba24"
+        },
+        {
+          name: "GitHub",
+          href: "https://github.com/jasba24"
+        },
+        {
+          name: "Platzi",
+          href: "https://platzi.com/@jasba24"
         }
       ]
     };
