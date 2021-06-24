@@ -1,5 +1,14 @@
 <template>
   <div class="about">
-    <h1>About</h1>
+    <Profile></Profile>
   </div>
 </template>
+
+<script>
+import Profile from "@/components/PfProfile";
+
+export default {
+  name: "About",
+  components: { Profile }
+};
+</script>

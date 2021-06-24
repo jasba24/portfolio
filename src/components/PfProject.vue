@@ -18,9 +18,10 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .card-project {
-  width: 250px;
+  width: 350px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +30,10 @@ export default {
   box-shadow: 0px 6px 7px 2px gray;
 }
 img {
-  height: 180px;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+  border: 0.1px solid gray;
 }
 .card-project a button {
   height: 50px;

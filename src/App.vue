@@ -1,14 +1,34 @@
 <template>
-  <Header></Header>
+  <Header :links="headerLinks"></Header>
   <router-view></router-view>
+  <Footer></Footer>
 </template>
 
 <script>
 import Header from "@/components/PfHeader";
+import Footer from "@/components/ PfFooter";
 
 export default {
   name: "App",
-  components: { Header }
+  components: { Header, Footer },
+  data() {
+    return {
+      headerLinks: [
+        {
+          name: "About",
+          href: "/about"
+        },
+        {
+          name: "Blog",
+          href: "/blog"
+        },
+        {
+          name: "Projects",
+          href: "/projects"
+        }
+      ],
+    };
+  }
 };
 </script>
 
@@ -39,5 +59,20 @@ a {
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: var(--primary-color);
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects h1 {
+  margin: 20px 0;
+}
+.projects-container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 </style>

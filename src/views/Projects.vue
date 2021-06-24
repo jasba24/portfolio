@@ -16,7 +16,7 @@
 import platziBadges from "@/assets/platzi-badges.png";
 import exchange from "@/assets/exchange.png";
 import platziMusic from "@/assets/platzi-music.png";
-import diabloe3 from "@/assets/diabloe3.png";
+import diablo3 from "@/assets/diablo3.png";
 import spa from "@/assets/spa.png";
 import icon from "@/assets/logo.png";
 import Project from "@/components/PfProject";
@@ -34,7 +34,7 @@ export default {
           href: "Platzi-badges"
         },
         {
-          logo: diabloe3,
+          logo: diablo3,
           icon: icon,
           href: "Platzi-badges"
         },
@@ -63,21 +63,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.projects h1 {
-  margin: 20px 0;
-}
-.projects-container {
-  display: grid;
-  width: 800px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-</style>
