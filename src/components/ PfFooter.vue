@@ -1,12 +1,12 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <h1 class="footer-title">Contact me</h1>
     <div>
       <a
+        class="footer-link"
         target="_blank"
         v-for="(l, i) in links"
         :key="i"
-        class="footer-link"
         :href="l.href"
       >
         {{ l.name }}
@@ -18,7 +18,24 @@
 <script>
 export default {
   name: "footer",
-  props: ["links"]
+  data() {
+    return {
+      links: [
+        {
+          name: "LinkedIn",
+          href: "https://linkedin.com/in/jasba24"
+        },
+        {
+          name: "Twitter",
+          href: "https://twitter.com/jasba24"
+        },
+        {
+          name: "GitHub",
+          href: "https://github.com/jasba24"
+        }
+      ]
+    };
+  }
 };
 </script>
 

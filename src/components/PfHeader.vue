@@ -10,6 +10,9 @@
       >
         {{ l.name }}
       </router-link>
+      <router-link class="header-link" to="#footer" hash="#footer">
+        Contact
+      </router-link>
     </div>
   </header>
 </template>
