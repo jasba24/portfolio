@@ -31,12 +31,12 @@ export default {
         {
           logo: spa,
           icon: icon,
-          href: "Platzi-badges"
+          href: "SPA-JS"
         },
         {
           logo: diablo3,
           icon: icon,
-          href: "Platzi-badges"
+          href: "diabloe3-vue"
         },
         {
           logo: platziBadges,
