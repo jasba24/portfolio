@@ -45,7 +45,7 @@ export default {
         {
           logo: platziMusic,
           icon: icon,
-          href: "Platzi-badges"
+          href: "Platzi-music-vue"
         }
       ]
     };
