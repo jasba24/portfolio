@@ -1,5 +1,9 @@
 <template>
-  <footer class="footer" id="footer">
+  <footer
+    class="footer"
+    :class="{ bottom: addStyle ? true : false }"
+    id="footer"
+  >
     <h1 class="footer-title">Contact me</h1>
     <div>
       <a
@@ -35,6 +39,16 @@ export default {
         }
       ]
     };
+  },
+
+  computed: {
+    addStyle() {
+      if (this.$route.name === "About" || this.$route.name === "Blog") {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
 </script>
