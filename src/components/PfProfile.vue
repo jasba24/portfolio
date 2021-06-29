@@ -26,7 +26,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
   text-align: center;
 }
 h1 {

@@ -75,4 +75,10 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
+.footer.bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
 </style>

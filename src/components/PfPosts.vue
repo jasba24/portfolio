@@ -1,5 +1,5 @@
 <template>
-  <h1 class="posts__title">Blog posts</h1>
+  <h1 class="posts__title">Blog Posts</h1>
   <template class="posts__container">
     <Post
       v-for="(p, i) in posts"
@@ -44,7 +44,8 @@ export default {
 <style>
 .posts__title {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .posts__container {
   display: flex;
