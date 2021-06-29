@@ -1,5 +1,14 @@
 <template>
-	<div class="blog">
-		<h1>Blog</h1>
-	</div>
+  <div class="blog">
+    <Posts></Posts>
+  </div>
 </template>
+
+<script>
+import Posts from "@/components/PfPosts";
+
+export default {
+  name: "blog",
+  components: { Posts },
+};
+</script>
