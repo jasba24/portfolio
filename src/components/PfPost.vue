@@ -21,9 +21,11 @@ export default {
 
 <style>
 .post {
+  width: 30%;
   text-align: center;
   box-shadow: 0px 3px 7px 3px grey;
   padding: 10px;
+  margin-right: 20px;
 }
 .post__description {
   font-size: 2rem;
