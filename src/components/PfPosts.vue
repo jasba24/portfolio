@@ -24,22 +24,16 @@ export default {
     return {
       posts: [
         {
-          title: "Lorem ipsum",
+          title: "Como añadir un nuevo usuario root en mysql-workbench",
           description:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio deserunt ut in, maiores similique est modi. Natus obcaecati blanditiis architecto excepturi rerum.",
-          link: "https://twitter.com/jasba24"
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio.",
+          link: "https://dev.to/jasba24/como-anadir-un-nuevo-usuario-root-en-mysql-workbench-59gc"
         },
         {
-          title: "Lorem ipsum",
+          title: "Como enviar un proceso en la terminal a un segundo plano",
           description:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio deserunt ut in, maiores similique est modi. Natus obcaecati blanditiis architecto excepturi rerum.",
-          link: "https://twitter.com/jasba24"
-        },
-        {
-          title: "Lorem ipsum",
-          description:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio deserunt ut in, maiores similique est modi. Natus obcaecati blanditiis architecto excepturi rerum.",
-          link: "https://twitter.com/jasba24"
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio.",
+          link: "https://dev.to/jasba24/como-enviar-un-proceso-en-la-terminal-a-un-segundo-plano-31ip"
         }
       ]
     };
@@ -53,9 +47,10 @@ export default {
   margin: 20px 0;
 }
 .posts__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
   margin: 0 20px;
 }
 </style>
