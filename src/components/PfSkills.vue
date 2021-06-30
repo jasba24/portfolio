@@ -18,7 +18,7 @@
 <script>
 import bulma from "@/assets/icon/bulma.png";
 import css from "@/assets/icon/css.svg";
-import GitYGitHub from "@/assets/icon/GitYGitHub.jpg";
+import GitYGitHub from "@/assets/icon/GitYGitHub.png";
 import vue from "@/assets/icon/vue.svg";
 import react from "@/assets/icon/react.svg";
 import html from "@/assets/icon/html.svg";
