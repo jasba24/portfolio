@@ -2,8 +2,14 @@
   <section class="skills">
     <h1>Skills</h1>
     <ul class="skills-list">
-      <li v-for="(s, i) in skills" :key="i">
-        <img :src="s.icon" :alt="s.name" :title="s.name" />
+      <li v-for="(s, i) in skills" :key="i" class="skills-item-container">
+        <span class="skills-img-title" :ref="s.name">{{ s.name }}</span>
+        <img
+          @mouseover="showImgTitle(s.name)"
+          @mouseleave="showImgTitle(s.name)"
+          :src="s.icon"
+          :alt="s.name"
+        />
       </li>
     </ul>
   </section>
@@ -69,6 +75,17 @@ export default {
         }
       ]
     };
+  },
+
+  methods: {
+    showImgTitle(item) {
+      this.$refs[item].classList.toggle("show-title");
+      if (item === "APIs REST") {
+        this.$refs[item].innerHTML = `APIs <br /> REST`;
+      } else if (item === "GIT Y GITHUB") {
+        this.$refs[item].innerHTML = `GIT Y <br /> GITHUB`;
+      }
+    }
   }
 };
 </script>
@@ -88,7 +105,7 @@ export default {
   align-items: center;
   grid-template-columns: repeat(5, 1fr);
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin: 0 10px 20px;
   gap: 10px;
 }
 .skills-list li {
@@ -99,5 +116,23 @@ export default {
   height: 100px;
   border: none;
   cursor: pointer;
+}
+.skills-item-container {
+  position: relative;
+}
+.skills-img-title {
+  position: absolute;
+  color: white;
+  background-color: black;
+  border: 1px white solid;
+  border-radius: 4px;
+  padding: 2px;
+  right: 0px;
+  font-size: 15px;
+  bottom: 50%;
+  display: none;
+}
+.show-title {
+  display: block;
 }
 </style>
