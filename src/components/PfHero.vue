@@ -19,8 +19,12 @@ export default {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  /* background-color: #000;
-  color: #fff; */
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(26, 21, 21, 0) 0%,
+      rgba(1, 1, 1, 0.16) 100%
+    ),
+    #ffffff;
 }
 .hero h1 {
   margin-bottom: 20px;

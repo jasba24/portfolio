@@ -26,7 +26,7 @@ export default {
           name: "Projects",
           href: "/projects"
         }
-      ],
+      ]
     };
   }
 };
@@ -35,6 +35,7 @@ export default {
 <style>
 :root {
   --primary-color: #2c3e50;
+  --box-color: #ffffff8a;
 }
 
 * {
@@ -54,6 +55,10 @@ h1 {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+body {
+  background: rgba(1, 1, 1, 0.16);
 }
 
 #app {

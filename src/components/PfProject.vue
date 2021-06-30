@@ -28,7 +28,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-shadow: 0px 6px 7px 2px gray;
+  box-shadow: 0px 6px 7px 2px var(--primary-color);
 }
 img {
   width: 300px;
@@ -43,8 +43,9 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  color: var(--primary-color);
+  color: white;
   font-weight: bold;
   font-size: 2.5rem;
+  background-color: var(--primary-color);
 }
 </style>

@@ -22,7 +22,7 @@ export default {
 .post {
   width: 30%;
   text-align: center;
-  box-shadow: 0px 3px 7px 3px grey;
+  box-shadow: 0px 3px 7px 3px var(--box-color);
   padding: 10px;
   margin-right: 20px;
 }

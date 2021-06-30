@@ -64,7 +64,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  box-shadow: -2px -6px 7px 0 grey;
+  box-shadow: -2px -6px 7px 0 var(--box-color);
   margin-top: 40px;
 }
 .footer-title {
