@@ -5,17 +5,25 @@
     <a class="post__link" :href="link" target="_blank">
       <button>
         See Post
-        <img src="../assets/logo.png" class="button-icon" alt="button logo" />
+        <img :src="icon" class="button-icon" alt="button logo" />
       </button>
     </a>
   </main>
 </template>
 
 <script>
+import icon from "@/assets/logo.png";
+
 export default {
   name: "Post",
 
-  props: ["title", "description", "link"]
+  props: ["title", "description", "link"],
+
+  data() {
+    return {
+      icon
+    };
+  }
 };
 </script>
 
@@ -40,7 +48,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-	margin: 0 auto;
+  margin: 0 auto;
   color: var(--primary-color);
   font-weight: bold;
   font-size: 2.5rem;

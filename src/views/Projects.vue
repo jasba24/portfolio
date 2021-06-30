@@ -18,7 +18,7 @@ import exchange from "@/assets/exchange.png";
 import platziMusic from "@/assets/platzi-music.png";
 import diablo3 from "@/assets/diablo3.png";
 import spa from "@/assets/spa.png";
-import icon from "@/assets/logo.png";
+import hackaton from "@/assets/hackaton.png";
 import Project from "@/components/PfProject";
 
 export default {
@@ -30,33 +30,27 @@ export default {
       projects: [
         {
           logo: spa,
-          icon: icon,
           href: "SPA-JS"
         },
         {
           logo: diablo3,
-          icon: icon,
           href: "diabloe3-vue"
         },
         {
           logo: platziBadges,
-          icon: icon,
           href: "Platzi-badges"
         },
         {
           logo: exchange,
-          icon: icon,
           href: "Platzi-exchange-vue"
         },
         {
           logo: platziMusic,
-          icon: icon,
           href: "Platzi-music-vue"
         },
         {
-          logo: icon,
-          icon: icon,
-          href: "Platzi-badges"
+          logo: hackaton,
+          href: "hackaton-project"
         }
       ]
     };

@@ -1,20 +1,30 @@
 <template>
-  <section class="card-project">
+  <a
+    class="card-project"
+    target="_blank"
+    :href="'https://github.com/jasba24/' + href"
+  >
     <img :src="logo" alt="imagen del proyecto" class="card-image" />
-    <a target="_blank" :href="'https://github.com/jasba24/' + href">
-      <button>
-        See project
-        <img :src="icon" class="button-icon" />
-      </button>
-    </a>
-  </section>
+    <button>
+      See project
+      <img :src="icon" class="button-icon" />
+    </button>
+  </a>
 </template>
 
 <script>
+import icon from "@/assets/logo.png";
+
 export default {
   name: "Project",
 
-  props: ["icon", "logo", "href"]
+  props: ["logo", "href"],
+
+  data() {
+    return {
+      icon
+    };
+  }
 };
 </script>
 
@@ -35,12 +45,13 @@ img {
   margin-bottom: 10px;
   border: 0.1px solid gray;
 }
-.card-project a button {
+.card-project button {
   height: 50px;
   width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   color: var(--primary-color);
   font-weight: bold;
   font-size: 2.5rem;
