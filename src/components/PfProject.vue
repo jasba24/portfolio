@@ -4,7 +4,7 @@
     target="_blank"
     :href="'https://github.com/jasba24/' + href"
   >
-    <img :src="logo" alt="imagen del proyecto" class="card-image" />
+    <img :src="logo" alt="proyecto image" class="card-image" />
     <button>
       See project
     </button>

@@ -5,7 +5,7 @@
     id="footer"
   >
     <h1 class="footer-title">Contact me</h1>
-    <h1 class="footer-title">Made with <img :src="logo" /></h1>
+    <h1 class="footer-title">Made with <img :src="logo" alt="vue.js icon" /></h1>
     <div>
       <a
         class="footer-link"

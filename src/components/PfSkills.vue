@@ -8,7 +8,7 @@
           @mouseover="showImgTitle(s.name)"
           @mouseleave="showImgTitle(s.name)"
           :src="s.icon"
-          :alt="s.name"
+          :alt="s.name.toLowerCase() + ' icon'"
         />
       </li>
     </ul>
