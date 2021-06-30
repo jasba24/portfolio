@@ -5,25 +5,16 @@
     <a class="post__link" :href="link" target="_blank">
       <button>
         See Post
-        <img :src="icon" class="button-icon" alt="button logo" />
       </button>
     </a>
   </main>
 </template>
 
 <script>
-import icon from "@/assets/logo.png";
-
 export default {
   name: "Post",
 
-  props: ["title", "description", "link"],
-
-  data() {
-    return {
-      icon
-    };
-  }
+  props: ["title", "description", "link"]
 };
 </script>
 

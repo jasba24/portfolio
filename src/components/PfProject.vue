@@ -7,24 +7,15 @@
     <img :src="logo" alt="imagen del proyecto" class="card-image" />
     <button>
       See project
-      <img :src="icon" class="button-icon" />
     </button>
   </a>
 </template>
 
 <script>
-import icon from "@/assets/logo.png";
-
 export default {
   name: "Project",
 
-  props: ["logo", "href"],
-
-  data() {
-    return {
-      icon
-    };
-  }
+  props: ["logo", "href"]
 };
 </script>
 
@@ -55,10 +46,5 @@ img {
   color: var(--primary-color);
   font-weight: bold;
   font-size: 2.5rem;
-}
-.button-icon {
-  width: 25px;
-  height: 25px;
-  margin-left: 10px;
 }
 </style>

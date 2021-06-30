@@ -34,11 +34,11 @@ export default {
       projects: [
         {
           logo: platziBadges,
-          href: "Platzi-badges"
+          href: "Platzi-bagdes"
         },
         {
           logo: exchange,
-          href: "Platzi-exchange"
+          href: "Platzi-exchange-vue"
         },
         {
           logo: platziMusic,

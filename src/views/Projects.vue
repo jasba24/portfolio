@@ -5,7 +5,6 @@
       <Project
         v-for="(p, i) in projects"
         :logo="p.logo"
-        :icon="p.icon"
         :href="p.href"
       ></Project>
     </div>
@@ -38,7 +37,7 @@ export default {
         },
         {
           logo: platziBadges,
-          href: "Platzi-badges"
+          href: "Platzi-bagdes"
         },
         {
           logo: exchange,
@@ -50,7 +49,7 @@ export default {
         },
         {
           logo: hackaton,
-          href: "hackaton-project"
+          href: "hackatonProject"
         }
       ]
     };

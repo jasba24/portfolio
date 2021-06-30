@@ -5,6 +5,7 @@
     id="footer"
   >
     <h1 class="footer-title">Contact me</h1>
+    <h1 class="footer-title">Made with <img :src="logo" /></h1>
     <div>
       <a
         class="footer-link"
@@ -20,10 +21,13 @@
 </template>
 
 <script>
+import logo from "@/assets/logo.png";
+
 export default {
   name: "footer",
   data() {
     return {
+      logo,
       links: [
         {
           name: "LinkedIn",
@@ -66,6 +70,12 @@ export default {
 .footer-title {
   font-size: 3.2rem;
   font-weight: bold;
+}
+.footer-title img {
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-bottom: 0;
 }
 .footer-link {
   font-size: 1.6rem;
