@@ -22,7 +22,7 @@ export default {
 .post {
   width: 30%;
   text-align: center;
-  box-shadow: 0px 3px 7px 3px var(--box-color);
+  box-shadow: 0px 3px 7px 3px var(--primary-color);
   padding: 10px;
   margin-right: 20px;
 }
@@ -40,13 +40,9 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  color: var(--primary-color);
+  color: white;
   font-weight: bold;
   font-size: 2.5rem;
-}
-.button-icon {
-  width: 25px;
-  height: 25px;
-  margin-left: 10px;
+  background-color: var(--primary-color);
 }
 </style>
