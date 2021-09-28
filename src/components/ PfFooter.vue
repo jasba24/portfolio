@@ -11,6 +11,7 @@
     <div>
       <a
         class="footer-link"
+        rel="noopener noreferrer"
         target="_blank"
         v-for="(l, i) in links"
         :key="i"

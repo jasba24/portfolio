@@ -1,6 +1,7 @@
 <template>
   <a
     class="card-project"
+    rel="noopener noreferrer"
     target="_blank"
     :href="'https://github.com/jasba24/' + href"
   >
@@ -44,6 +45,7 @@ img {
   font-weight: bold;
   font-size: 2.5rem;
   background-color: var(--button-color);
-  color: #ffc069;
+  color: white;
+  border: none;
 }
 </style>
