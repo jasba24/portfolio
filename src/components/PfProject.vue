@@ -11,12 +11,8 @@
   </a>
 </template>
 
-<script>
-export default {
-  name: "Project",
-
-  props: ["logo", "href"]
-};
+<script setup>
+defineProps(["logo", "href"])
 </script>
 
 <style>
@@ -48,6 +44,6 @@ img {
   font-weight: bold;
   font-size: 2.5rem;
   background-color: var(--button-color);
-  color: #FFC069;
+  color: #ffc069;
 }
 </style>

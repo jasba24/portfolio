@@ -8,7 +8,6 @@
         <Project
           v-for="(p, i) in projects"
           :logo="p.logo"
-          :icon="p.icon"
           :href="p.href"
         ></Project>
       </div>
@@ -16,36 +15,27 @@
   </div>
 </template>
 
-<script>
-import platziBadges from "@/assets/platzi-badges.png";
-import exchange from "@/assets/exchange.png";
-import platziMusic from "@/assets/platzi-music.png";
-import icon from "@/assets/logo.png";
-import Hero from "@/components/PfHero";
-import Skills from "@/components/PfSkills";
-import Project from "@/components/PfProject";
+<script setup>
+import platziBadges from "@/assets/platzi-badges.png"
+import exchange from "@/assets/exchange.png"
+import platziMusic from "@/assets/platzi-music.png"
+import Hero from "@/components/PfHero"
+import Skills from "@/components/PfSkills"
+import Project from "@/components/PfProject"
+import { ref } from "vue"
 
-export default {
-  name: "Home",
-  components: { Hero, Skills, Project },
-
-  data() {
-    return {
-      projects: [
-        {
-          logo: platziBadges,
-          href: "Platzi-bagdes"
-        },
-        {
-          logo: exchange,
-          href: "Platzi-exchange-vue"
-        },
-        {
-          logo: platziMusic,
-          href: "Platzi-music-vue"
-        }
-      ]
-    };
-  }
-};
+const projects = ref([
+  {
+    logo: platziBadges,
+    href: "Platzi-bagdes",
+  },
+  {
+    logo: exchange,
+    href: "Platzi-exchange-vue",
+  },
+  {
+    logo: platziMusic,
+    href: "Platzi-music-vue",
+  },
+])
 </script>

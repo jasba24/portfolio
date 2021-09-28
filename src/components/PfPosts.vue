@@ -12,33 +12,26 @@
   </template>
 </template>
 
-<script>
-import Post from "@/components/PfPost";
+<script setup>
+import Post from "@/components/PfPost"
+import { ref } from "vue"
 
-export default {
-  name: "Posts",
-
-  components: { Post },
-
-  data() {
-    return {
-      posts: [
-        {
-          title: "Como añadir un nuevo usuario root en mysql-workbench",
-          description:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio.",
-          link: "https://dev.to/jasba24/como-anadir-un-nuevo-usuario-root-en-mysql-workbench-59gc"
-        },
-        {
-          title: "Como enviar un proceso en la terminal a un segundo plano",
-          description:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio.",
-          link: "https://dev.to/jasba24/como-enviar-un-proceso-en-la-terminal-a-un-segundo-plano-31ip"
-        }
-      ]
-    };
-  }
-};
+const posts = ref([
+  {
+    title: "Como añadir un nuevo usuario root en mysql-workbench",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio.",
+    link:
+      "https://dev.to/jasba24/como-anadir-un-nuevo-usuario-root-en-mysql-workbench-59gc",
+  },
+  {
+    title: "Como enviar un proceso en la terminal a un segundo plano",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio.",
+    link:
+      "https://dev.to/jasba24/como-enviar-un-proceso-en-la-terminal-a-un-segundo-plano-31ip",
+  },
+])
 </script>
 
 <style>

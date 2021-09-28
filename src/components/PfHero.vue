@@ -5,12 +5,6 @@
   </section>
 </template>
 
-<script>
-export default {
-	name: "Hero"
-};
-</script>
-
 <style>
 .hero {
   height: calc(100vh - 70px);
@@ -22,7 +16,7 @@ export default {
 }
 .hero h1 {
   margin-bottom: 20px;
-	font-size: 6rem;
+  font-size: 6rem;
 }
 .hero p {
   font-size: 3rem;

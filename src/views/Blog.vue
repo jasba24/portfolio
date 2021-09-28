@@ -4,13 +4,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Posts from "@/components/PfPosts"
-
-export default {
-  name: "blog",
-  components: { Posts },
-}
 </script>
 
 <style>

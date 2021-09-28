@@ -4,13 +4,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Profile from "@/components/PfProfile"
-
-export default {
-  name: "About",
-  components: { Profile },
-}
 </script>
 
 <style>

@@ -17,11 +17,8 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: "Header",
-  props: ["links"]
-};
+<script setup>
+defineProps(["links"])
 </script>
 
 <style scoped>
@@ -42,4 +39,3 @@ export default {
   font-weight: bold;
 }
 </style>
-

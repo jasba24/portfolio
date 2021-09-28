@@ -5,7 +5,9 @@
     id="footer"
   >
     <h1 class="footer-title">Contact me</h1>
-    <h1 class="footer-title">Made with <img :src="logo" alt="vue.js icon" /></h1>
+    <h1 class="footer-title">
+      Made with <img :src="logo" alt="vue.js icon" />
+    </h1>
     <div>
       <a
         class="footer-link"
@@ -20,41 +22,35 @@
   </footer>
 </template>
 
-<script>
-import logo from "@/assets/logo.png";
+<script setup>
+import logo from "@/assets/logo.png"
+import { ref, computed } from "vue"
+import { useRoute } from "vue-router"
 
-export default {
-  name: "footer",
-  data() {
-    return {
-      logo,
-      links: [
-        {
-          name: "LinkedIn",
-          href: "https://linkedin.com/in/jasba24"
-        },
-        {
-          name: "Twitter",
-          href: "https://twitter.com/jasba24"
-        },
-        {
-          name: "GitHub",
-          href: "https://github.com/jasba24"
-        }
-      ]
-    };
+const route = useRoute()
+
+const links = ref([
+  {
+    name: "LinkedIn",
+    href: "https://linkedin.com/in/jasba24",
   },
+  {
+    name: "Twitter",
+    href: "https://twitter.com/jasba24",
+  },
+  {
+    name: "GitHub",
+    href: "https://github.com/jasba24",
+  },
+])
 
-  computed: {
-    addStyle() {
-      if (this.$route.name === "About" || this.$route.name === "Blog") {
-        return true;
-      } else {
-        return false;
-      }
-    }
+const addStyle = computed(() => {
+  if (route.name === "About" || route.name === "Blog") {
+    return true
+  } else {
+    return false
   }
-};
+})
 </script>
 
 <style scoped>
@@ -84,4 +80,3 @@ export default {
   cursor: pointer;
 }
 </style>
-

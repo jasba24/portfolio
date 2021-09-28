@@ -16,16 +16,16 @@
 </template>
 
 <script>
-import bulma from "@/assets/icon/bulma.png";
-import css from "@/assets/icon/css.svg";
-import GitYGitHub from "@/assets/icon/GitYGitHub.png";
-import vue from "@/assets/icon/vue.svg";
-import react from "@/assets/icon/react.svg";
-import html from "@/assets/icon/html.svg";
-import rest from "@/assets/icon/rest.png";
-import stylus from "@/assets/icon/stylus.svg";
-import tailwind from "@/assets/icon/tailwind.svg";
-import js from "@/assets/icon/js.svg";
+import bulma from "@/assets/icon/bulma.png"
+import css from "@/assets/icon/css.svg"
+import GitYGitHub from "@/assets/icon/GitYGitHub.png"
+import vue from "@/assets/icon/vue.svg"
+import react from "@/assets/icon/react.svg"
+import html from "@/assets/icon/html.svg"
+import rest from "@/assets/icon/rest.png"
+import stylus from "@/assets/icon/stylus.svg"
+import tailwind from "@/assets/icon/tailwind.svg"
+import js from "@/assets/icon/js.svg"
 
 export default {
   name: "Skills",
@@ -35,59 +35,59 @@ export default {
       skills: [
         {
           icon: html,
-          name: "HTML"
+          name: "HTML",
         },
         {
           icon: css,
-          name: "CSS"
+          name: "CSS",
         },
         {
           icon: stylus,
-          name: "STYLUS"
+          name: "STYLUS",
         },
         {
           icon: tailwind,
-          name: "TAILWIND"
+          name: "TAILWIND",
         },
         {
           icon: bulma,
-          name: "BULMA"
+          name: "BULMA",
         },
         {
           icon: js,
-          name: "JS"
+          name: "JS",
         },
         {
           icon: vue,
-          name: "VUE"
+          name: "VUE",
         },
         {
           icon: react,
-          name: "REACT"
+          name: "REACT",
         },
         {
           icon: rest,
-          name: "APIs REST"
+          name: "APIs REST",
         },
         {
           icon: GitYGitHub,
-          name: "GIT Y GITHUB"
-        }
-      ]
-    };
+          name: "GIT Y GITHUB",
+        },
+      ],
+    }
   },
 
   methods: {
     showImgTitle(item) {
-      this.$refs[item].classList.toggle("show-title");
+      this.$refs[item].classList.toggle("show-title")
       if (item === "APIs REST") {
-        this.$refs[item].innerHTML = `APIs <br /> REST`;
+        this.$refs[item].innerHTML = `APIs <br /> REST`
       } else if (item === "GIT Y GITHUB") {
-        this.$refs[item].innerHTML = `GIT Y <br /> GITHUB`;
+        this.$refs[item].innerHTML = `GIT Y <br /> GITHUB`
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>
 
 <style scoped>
