@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import Header from "@/components/PfHeader";
-import Footer from "@/components/ PfFooter";
+import Header from "@/components/PfHeader"
+import Footer from "@/components/ PfFooter"
 
 export default {
   name: "App",
@@ -16,26 +16,28 @@ export default {
       headerLinks: [
         {
           name: "About",
-          href: "/about"
+          href: "/about",
         },
         {
           name: "Blog",
-          href: "/blog"
+          href: "/blog",
         },
         {
           name: "Projects",
-          href: "/projects"
-        }
-      ]
-    };
-  }
-};
+          href: "/projects",
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style>
 :root {
-  --primary-color: #2c3e50;
-  --box-color: #ffffff8a;
+  --primary-color: #00b7c2;
+  --box-color: #00b7c2;
+  --bg-color: #1b262c;
+  --button-color: #00b7c2;
 }
 
 * {
@@ -58,7 +60,7 @@ a {
 }
 
 body {
-  background: rgba(1, 1, 1, 0.16);
+  background: var(--bg-color);
 }
 
 #app {

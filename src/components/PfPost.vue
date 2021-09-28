@@ -44,5 +44,6 @@ export default {
   font-weight: bold;
   font-size: 2.5rem;
   background-color: var(--primary-color);
+  color: #FFC069;
 }
 </style>

@@ -28,7 +28,8 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  box-shadow: 0px 6px 7px 2px var(--primary-color);
+  box-shadow: 0px 6px 7px 2px var(--box-color);
+  background-color: var(--project-color);
 }
 img {
   width: 300px;
@@ -46,6 +47,7 @@ img {
   color: white;
   font-weight: bold;
   font-size: 2.5rem;
-  background-color: var(--primary-color);
+  background-color: var(--button-color);
+  color: #FFC069;
 }
 </style>

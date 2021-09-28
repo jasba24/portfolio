@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import Profile from "@/components/PfProfile";
+import Profile from "@/components/PfProfile"
 
 export default {
   name: "About",
-  components: { Profile }
-};
+  components: { Profile },
+}
 </script>
 
 <style>
@@ -20,11 +20,5 @@ export default {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(26, 21, 21, 0) 0%,
-      rgba(1, 1, 1, 0.16) 100%
-    ),
-    #ffffff;
 }
 </style>
