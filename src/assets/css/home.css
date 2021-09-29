@@ -1,0 +1,33 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects h1 {
+  margin: 20px 0;
+}
+.projects-container {
+  width: 80%;
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+.projects-container a:last-child {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects-container a:last-child {
+    display: none;
+  }
+}

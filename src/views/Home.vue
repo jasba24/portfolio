@@ -19,6 +19,7 @@
 import platziBadges from "@/assets/platzi-badges.png"
 import exchange from "@/assets/exchange.png"
 import platziMusic from "@/assets/platzi-music.png"
+import diablo3 from "@/assets/diablo3.png"
 import Hero from "@/components/PfHero"
 import Skills from "@/components/PfSkills"
 import Project from "@/components/PfProject"
@@ -37,5 +38,11 @@ const projects = ref([
     logo: platziMusic,
     href: "Platzi-music-vue",
   },
+  {
+    logo: diablo3,
+    href: "diabloe3-vue",
+  },
 ])
 </script>
+
+<style src="../assets/css/home.css"></style>

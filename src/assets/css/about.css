@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  height: calc(100vh - 250px);
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  margin: 10px 0;
+}
+p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .about {
+    height: calc(100vh - 280px);
+  }
+}

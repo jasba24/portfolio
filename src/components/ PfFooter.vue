@@ -8,7 +8,7 @@
     <h1 class="footer-title">
       Made with <img :src="logo" alt="vue.js icon" />
     </h1>
-    <div>
+    <div class="links-container">
       <a
         class="footer-link"
         rel="noopener noreferrer"
@@ -54,30 +54,4 @@ const addStyle = computed(() => {
 })
 </script>
 
-<style scoped>
-.footer {
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  box-shadow: -2px -6px 7px 0 var(--box-color);
-  margin-top: 40px;
-}
-.footer-title {
-  font-size: 3.2rem;
-  font-weight: bold;
-}
-.footer-title img {
-  width: 40px;
-  height: 40px;
-  border: none;
-  margin-bottom: 0;
-}
-.footer-link {
-  font-size: 1.6rem;
-  margin-left: 10px;
-  font-weight: bold;
-  cursor: pointer;
-}
-</style>
+<style scoped src="../assets/css/footer.css"></style>

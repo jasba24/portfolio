@@ -13,20 +13,3 @@
     </p>
   </section>
 </template>
-
-<style>
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-h1 {
-  margin: 20px 0;
-}
-p {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-</style>

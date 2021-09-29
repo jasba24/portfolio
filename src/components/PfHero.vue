@@ -5,20 +5,4 @@
   </section>
 </template>
 
-<style>
-.hero {
-  height: calc(100vh - 70px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.hero h1 {
-  margin-bottom: 20px;
-  font-size: 6rem;
-}
-.hero p {
-  font-size: 3rem;
-}
-</style>
+<style src="../assets/css/hero.css"></style>

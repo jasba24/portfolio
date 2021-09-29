@@ -8,12 +8,4 @@
 import Profile from "@/components/PfProfile"
 </script>
 
-<style>
-.about {
-  display: flex;
-  height: calc(100vh - 150px);
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-</style>
+<style src="../assets/css/about.css"></style>
