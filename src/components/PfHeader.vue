@@ -21,21 +21,4 @@
 defineProps(["links"])
 </script>
 
-<style scoped>
-.header {
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-}
-.header-title {
-  font-size: 3.2rem;
-  font-weight: bold;
-}
-.header-link {
-  font-size: 1.6rem;
-  margin-left: 10px;
-  font-weight: bold;
-}
-</style>
+<style scoped src="../assets/css/header.css"></style>
