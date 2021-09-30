@@ -1,5 +1,5 @@
 <template>
-  <h1 class="posts__title">Blog Posts</h1>
+  <h1 class="posts__title">Posts</h1>
   <template class="posts__container">
     <Post
       v-for="(p, i) in posts"
@@ -8,6 +8,7 @@
       :description="p.description"
       :link="p.link"
       :urlLink="p.urlLink"
+      :time="p.time"
     ></Post>
   </template>
 </template>
@@ -20,31 +21,18 @@ const posts = ref([
   {
     title: "Como añadir un nuevo usuario root en mysql-workbench",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio.",
+      "Para crear un nuevo usuario usa estos comandos: Primero abre mysql con sudo en tu terminal lo cual les pedira la contraseña del computador y le abrira esta interfaz en la consola",
+    time: "June, 2021  2 minutos",
     link:
       "https://dev.to/jasba24/como-anadir-un-nuevo-usuario-root-en-mysql-workbench-59gc",
   },
   {
     title: "Como enviar un proceso en la terminal a un segundo plano",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, fugit delectus nostrum facilis quidem vero cupiditate odio.",
+      "Probablemente cuando has iniciado un proyecto corres en tu terminal: \n npm run start lo cual te abre un servidor para poder desarrollar en local pero si necesitabas instalar una nueva librería tenias que matar tu servidor e instalarla y volver a iniciar el servidor.",
+    time: "April, 2021  1 minuto",
     link:
       "https://dev.to/jasba24/como-enviar-un-proceso-en-la-terminal-a-un-segundo-plano-31ip",
   },
 ])
 </script>
-
-<style>
-.posts__title {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.posts__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% - 40px);
-  margin: 0 20px;
-}
-</style>

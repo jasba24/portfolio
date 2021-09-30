@@ -7,12 +7,10 @@
 }
 .header-title {
   font-size: 2rem;
-  font-weight: bold;
 }
 .header-link {
   font-size: 1rem;
   margin-left: 10px;
-  font-weight: bold;
 }
 @media (min-width: 425px) {
   .header-title {

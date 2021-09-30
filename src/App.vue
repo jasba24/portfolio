@@ -32,39 +32,4 @@ export default {
 }
 </script>
 
-<style>
-:root {
-  --primary-color: #00b7c2;
-  --box-color: #00b7c2;
-  --bg-color: #1b262c;
-  --button-color: white;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-h1 {
-  font-size: 3.2rem;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-body {
-  background: var(--bg-color);
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  color: var(--primary-color);
-}
-.footer.bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-}
-</style>
+<style src="./index.css"></style>

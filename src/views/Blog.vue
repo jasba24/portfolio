@@ -8,12 +8,4 @@
 import Posts from "@/components/PfPosts"
 </script>
 
-<style>
-.blog {
-  display: flex;
-  height: calc(100vh - 150px);
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-</style>
+<style src="../assets/css/blog.css"></style>

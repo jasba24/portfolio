@@ -26,7 +26,6 @@
   align-items: center;
   font-size: 1.8rem;
 }
-
 @media (min-width: 768px) {
   .footer {
     display: flex;
@@ -43,5 +42,11 @@
     margin-left: 10px;
     font-weight: bold;
     cursor: pointer;
+  }
+  .footer.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
   }
 }
