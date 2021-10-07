@@ -22,7 +22,7 @@ import GitYGitHub from "@/assets/icon/GitYGitHub.png"
 import vue from "@/assets/icon/vue.png"
 import react from "@/assets/icon/react.png"
 import html from "@/assets/icon/html.png"
-import rest from "@/assets/icon/rest.png"
+import nodejs from '@/assets/icon/nodejs.png'
 import stylus from "@/assets/icon/stylus.png"
 import tailwind from "@/assets/icon/tailwind.png"
 import js from "@/assets/icon/js.png"
@@ -66,8 +66,8 @@ export default {
           name: "REACT",
         },
         {
-          icon: rest,
-          name: "APIs REST",
+          icon: nodejs,
+          name: "NODEJS",
         },
         {
           icon: GitYGitHub,
@@ -80,9 +80,7 @@ export default {
   methods: {
     showImgTitle(item) {
       this.$refs[item].classList.toggle("show-title")
-      if (item === "APIs REST") {
-        this.$refs[item].innerHTML = `APIs <br /> REST`
-      } else if (item === "GIT Y GITHUB") {
+      if (item === "GIT Y GITHUB") {
         this.$refs[item].innerHTML = `GIT Y <br /> GITHUB`
       }
     },
